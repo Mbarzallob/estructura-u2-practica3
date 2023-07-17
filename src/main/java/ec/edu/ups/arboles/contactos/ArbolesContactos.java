@@ -4,6 +4,9 @@
 
 package ec.edu.ups.arboles.contactos;
 
+import ec.edu.ups.arboles.contactos.controller.ArbolContactos;
+import ec.edu.ups.arboles.contactos.models.Contacto;
+
 /**
  *
  * @author SOPORTETICS
@@ -11,6 +14,16 @@ package ec.edu.ups.arboles.contactos;
 public class ArbolesContactos {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        ArbolContactos a = new ArbolContactos();
+        Contacto c1 = new Contacto("12345", "Juan");
+        Contacto c2 = new Contacto("12345", "Maria");
+        Contacto c3 = new Contacto("12345", "Pedro");
+        Contacto c4 = new Contacto("12345", "Pablo");
+        a.insert(c1);
+        a.insert(c2);
+        a.insert(c3);
+        a.insert(c4);
+        a.insert(new Contacto("12345","Julina"));
+        a.insert(new Contacto("12345","Jhon"));
     }
 }
